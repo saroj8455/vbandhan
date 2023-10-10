@@ -15,6 +15,7 @@ import { PrimeModule } from './prime/prime.module';
 import { HeadingComponent } from './components/heading/heading.component';
 import { DialmenuComponent } from './components/dialmenu/dialmenu.component';
 import { MessageService } from 'primeng/api';
+import { authGuard } from './auth.guard';
 @NgModule({
   declarations: [
     AppComponent,
