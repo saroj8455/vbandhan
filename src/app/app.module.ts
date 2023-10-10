@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { PrimeModule } from './prime/prime.module';
 import { HeadingComponent } from './components/heading/heading.component';
 import { DialmenuComponent } from './components/dialmenu/dialmenu.component';
+import { MessageService } from 'primeng/api';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,7 @@ import { DialmenuComponent } from './components/dialmenu/dialmenu.component';
     HttpClientModule,
     PrimeModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
