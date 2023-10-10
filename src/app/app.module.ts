@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http'
 import { PrimeModule } from './prime/prime.module';
 import { HeadingComponent } from './components/heading/heading.component';
+import { DialmenuComponent } from './components/dialmenu/dialmenu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { HeadingComponent } from './components/heading/heading.component';
     LandingComponent,
     ErrorComponent,
     NavbarComponent,
-    HeadingComponent
+    HeadingComponent,
+    DialmenuComponent
   ],
   imports: [
     BrowserModule,

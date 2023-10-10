@@ -4,13 +4,46 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100% !important;
+}
+
+
 body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  /* Make footer to Bootom of the page */
+  height: 100dvh;
+
+}
+
+/* Apply parent to display flex so that the footer will be bottom of the page */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
-  min-height: calc(100dvh - 2rem);
+  /* min-height: calc(100vh - 211px -58px) !important; */
   margin: 4rem 0;
+}
+
+/* .sticky-footer {
+  position: absolute !important;
+  bottom: 25px !important ;
+} */
+
+.footer {
+  /* display: none; */
+  width: 100vw;
+  height: 5rem;
+  /* Make the footer bottom of the screen */
+  margin-top: auto;
 }

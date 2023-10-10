@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { SpeedDialModule } from 'primeng/speeddial';
 
 @NgModule({
   declarations: [],
@@ -13,7 +13,8 @@ import { InputTextModule } from 'primeng/inputtext';
   exports:[
     ButtonModule,
     MenubarModule,
-    InputTextModule
+    InputTextModule,
+    SpeedDialModule
   ]
 })
 export class PrimeModule { }
