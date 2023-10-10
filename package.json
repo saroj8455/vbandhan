@@ -10,7 +10,7 @@
     "test": "ng test",
     "init-app":"ng build && npx cap add android && npx cap sync",
     "open":"npx cap open android",
-    "app":"ng build && && npx cap sync && npx cap open android"
+    "app":"npm run build && npx cap add android && npx cap sync && npx cap open android"
   },
   "private": true,
   "dependencies": {
