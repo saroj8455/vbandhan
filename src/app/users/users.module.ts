@@ -5,17 +5,21 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SupportComponent } from './support/support.component';
+import { SignupComponent } from './signup/signup.component';
+import { PrimeModule } from '../prime/prime.module';
 
 
 @NgModule({
   declarations: [
     UserdashboardComponent,
     ProfileComponent,
-    SupportComponent
+    SupportComponent,
+    SignupComponent,
   ],
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    PrimeModule
   ]
 })
 export class UsersModule { }

@@ -1,5 +1,7 @@
+import { MenuItem } from "primeng/api";
+
 export const Greet = "Welcome";
-export const MENU_ITEM = [
+export const MENU_ITEM:MenuItem[] = [
   {
     label: 'File',
     icon: 'pi pi-fw pi-file',
@@ -33,6 +35,8 @@ export const MENU_ITEM = [
       {
         label: 'New',
         icon: 'pi pi-fw pi-user-plus',
+        routerLink:"user/signup"
+
       },
       {
         label: 'Delete',

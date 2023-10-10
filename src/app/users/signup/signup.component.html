@@ -1,0 +1,44 @@
+<div class="card p-4">
+  <h1 class="text-center">Sign In</h1>
+  <p-toast position="top-center"></p-toast>
+  <div class="grid my-4 align-items-center">
+    <div class="col-12 md:col-6 lg:col-6">
+      <div class="card flex justify-content-center">
+        <p-image class="border-circle" src="https://media.istockphoto.com/id/952809996/vector/indian-wedding-couple-in-traditional-dresses-vector-design-for-wedding-invitation.jpg?s=612x612&w=0&k=20&c=BkAJF0SBIJzQHxxGYyfY2-RG9Pt7U5XEnwaGewFBwWc=" alt="Image"
+          width="250"></p-image>
+      </div>
+    </div>
+    <!-- p-dialog  -->
+    <p-dialog header="All field required" [(visible)]="visible" [style]="{width: '50vw'}">
+      <p>Username must be required.</p>
+      <p>Password must be required.</p>
+      <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="visible=false" label="Ok" styleClass="p-button-text"></p-button>
+    </ng-template>
+    </p-dialog>
+    <!-- Login Form  -->
+    <div class="col-12 md:col-6 lg:col-6">
+      <div class="card flex gap-5 flex-column py-3">
+        <div *ngIf="inProgress" class="card">
+          <p-progressBar [value]="loading"></p-progressBar>
+          <!-- <p-progressBar  mode="indeterminate" [style]="{'height': '6px'}"></p-progressBar> -->
+        </div>
+        <div class="card flex flex-column align-content-center justify-content-center gap-5">
+          <span class="p-float-label w-full">
+            <input type="text" pInputText class="w-full" [(ngModel)]="userauth.username" />
+            <label htmlFor="username">Username / Register Email</label>
+          </span>
+          <span class="p-float-label w-full">
+            <p-password [(ngModel)]="userauth.password" [feedback]="false" [toggleMask]="true"></p-password>
+            <label for="password">Password</label>
+          </span>
+        </div>
+        <div class="card flex align-items-center gap-3 justify-content-center">
+          <button pButton pRipple icon="pi pi-check" (click)="shippingAuth()" label="Submit"
+            class="p-button-success"></button>
+          <p-button pRipple label="Reset" (click)="resetAuthForm()" icon="pi pi-times"
+            styleClass="p-button-danger"></p-button>
+        </div>
+      </div>
+    </div>
+  </div>
