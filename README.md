@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## CLI commands
+Run `ng g m admin --routing` generate  admin module <br>
+Run `ng g c admin/dashboard` generate dashboard component inside admin folder<br>
+Run `ng g s admin/dashboard -m=admin/dashboard`<br><br>
+Run `ng serve --open` open browser and run application on localhost:4200<br>
+Run `npm start` for a dev server.<br>
+Navigate to http://localhost:4200/.<br>
+The app will automatically reload if you change any of the source files.<br>
