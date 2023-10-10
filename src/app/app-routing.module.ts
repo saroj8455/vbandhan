@@ -10,6 +10,8 @@ const routes: Routes = [
   {path:"landing",redirectTo:"landing",pathMatch:"full"},
   {path:"home",component:HomeComponent},
   {path:"about",component:AboutComponent},
+  {path:"user",loadChildren:()=>import("./users/users.module").then(m=>m.UsersModule)},
+  {path:"admin",loadChildren:()=>import("./admin/admin.module").then(a=>a.AdminModule)},
   {path:"**",component:ErrorComponent},
 ];
 

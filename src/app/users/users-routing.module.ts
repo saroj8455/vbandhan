@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserdashboardComponent } from './userdashboard/userdashboard.component';
+import { AboutComponent } from '../components/about/about.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:"dash",component:UserdashboardComponent},
+  {path:"about",component:AboutComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

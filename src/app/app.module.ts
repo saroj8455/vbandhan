@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http'
 import { PrimeModule } from './prime/prime.module';
+import { HeadingComponent } from './components/heading/heading.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { PrimeModule } from './prime/prime.module';
     AboutComponent,
     LandingComponent,
     ErrorComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,
