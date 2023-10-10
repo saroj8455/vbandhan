@@ -9,3 +9,8 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+
+.main-container {
+  min-height: calc(100dvh - 2rem);
+  margin: 4rem 0;
+}
