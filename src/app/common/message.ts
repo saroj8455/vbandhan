@@ -4,7 +4,8 @@ export const Greet = "Welcome";
 export const MENU_ITEM:MenuItem[] = [
   {
     label: 'File',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi pi-fw pi-home',
+    routerLink:"user/dash"
   },
   {
     label: 'Edit',

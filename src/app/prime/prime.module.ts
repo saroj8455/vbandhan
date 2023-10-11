@@ -10,6 +10,8 @@ import { DialogModule } from 'primeng/dialog';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { PasswordModule } from 'primeng/password';
 import { FormsModule } from '@angular/forms';
+import { ChipModule } from 'primeng/chip';
+import { SkeletonModule } from 'primeng/skeleton';
 @NgModule({
   declarations: [],
   imports: [
@@ -25,7 +27,9 @@ import { FormsModule } from '@angular/forms';
     ImageModule,
     DialogModule,
     ProgressBarModule,
-    PasswordModule
+    PasswordModule,
+    ChipModule,
+    SkeletonModule
   ]
 })
 export class PrimeModule { }

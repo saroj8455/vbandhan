@@ -1,5 +1,5 @@
 <div class="card p-4">
-  <h1 class="text-center">Sign In</h1>
+  <h1 class="text-center text-7xl">Sign In</h1>
   <p-toast position="top-center"></p-toast>
   <div class="grid my-4 align-items-center">
     <div class="col-12 md:col-6 lg:col-6">
@@ -18,11 +18,13 @@
     </p-dialog>
     <!-- Login Form  -->
     <div class="col-12 md:col-6 lg:col-6">
-      <div class="card flex gap-5 flex-column py-3">
-        <div *ngIf="inProgress" class="card">
-          <p-progressBar [value]="loading"></p-progressBar>
-          <!-- <p-progressBar  mode="indeterminate" [style]="{'height': '6px'}"></p-progressBar> -->
-        </div>
+      <!-- diable form when progress bar appear -->
+      <div *ngIf="inProgress" class="card">
+        <p class="tex-5xl text-center text-indigo-500 font-bold">Profile is loading.......Please wait.</p>
+        <p-progressBar [value]="loading"></p-progressBar>
+        <!-- <p-progressBar  mode="indeterminate" [style]="{'height': '6px'}"></p-progressBar> -->
+      </div>
+      <div *ngIf="!inProgress" class="card flex gap-5 flex-column py-3">
         <div class="card flex flex-column align-content-center justify-content-center gap-5">
           <span class="p-float-label w-full">
             <input type="text" pInputText class="w-full" [(ngModel)]="userauth.username" />
@@ -34,7 +36,7 @@
           </span>
         </div>
         <div class="card flex align-items-center gap-3 justify-content-center">
-          <button pButton pRipple icon="pi pi-check" (click)="shippingAuth()" label="Submit"
+          <button pButton pRipple icon="pi pi-check"  (click)="shippingAuth()" label="Submit"
             class="p-button-success"></button>
           <p-button pRipple label="Reset" (click)="resetAuthForm()" icon="pi pi-times"
             styleClass="p-button-danger"></p-button>
